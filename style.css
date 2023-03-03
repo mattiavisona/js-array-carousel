@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+#carousel{
+    position: relative;
+}
+
+#left-arrow{
+    position: absolute;
+    top: 50%;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+#right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
