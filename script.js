@@ -21,15 +21,28 @@ const imgElement = ["carousel-img/01.webp", "carousel-img/02.webp", "carousel-im
 // Preparo gli elementi da sintetizzare in js 
 
 let leftArrowElement = document.getElementById("left-arrow");
-console.log(leftArrowElement);
 
 let rightArrowElement = document.getElementById("right-arrow");
-console.log(rightArrowElement);
 
-let carouselElement = document.getElementById("carousel");
-console.log(carouselElement);              
+let carouselImgElement = document.getElementById("carouselimg");
+
+// Stabilisco una variabile i di partenza
+
+let i = 0;
 
 
-leftArrowElement.addEventListener("click", function () {
+rightArrowElement.addEventListener("click", function () {
+    i++;
+
+    carouselImgElement.src = imgElement[i];
     
+
 })
+
+leftArrowElement.addEventListener("click", function(){
+
+    i--;
+
+    carouselImgElement.src = imgElement[i];
+})
+
