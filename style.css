@@ -32,19 +32,4 @@
     cursor: pointer;
 }
 
-#circle-container{
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    position: absolute;
-    width: 100%;
-    bottom: 8px;
-}
-
-.circle{
-    width: 8px;
-    height: 8px;
-    background-color: rgb(133, 52, 52);
-    border-radius: 50%;
-}
 

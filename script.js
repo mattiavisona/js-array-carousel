@@ -26,7 +26,8 @@ let rightArrowElement = document.getElementById("right-arrow");
 
 let carouselImgElement = document.getElementById("carouselimg");
 
-// Stabilisco una variabile i di partenza
+// Stabilisco una variabile i di partenza 
+// Dico che la sequenza partirà dalla foto con indice 0
 
 let i = 0;
 
@@ -35,7 +36,13 @@ rightArrowElement.addEventListener("click", function () {
     i++;
 
     carouselImgElement.src = imgElement[i];
-    
+
+    leftArrowElement.style.display = "block";
+
+    if (i ==  imgElement.length - 1) {
+
+        rightArrowElement.style.display = "none";
+    }
 
 })
 
@@ -44,5 +51,16 @@ leftArrowElement.addEventListener("click", function(){
     i--;
 
     carouselImgElement.src = imgElement[i];
+
+    if (i == imgElement.lenght - 2) {
+
+        rightArrowElement.style.display = "block";
+        
+    }
+
+    if (i == 0){
+        leftArrowElement.style.display = "none"
+    }
+
 })
 
